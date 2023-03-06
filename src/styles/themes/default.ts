@@ -36,7 +36,7 @@ export const defaultTheme = {
   },
   fonts: {
     regular: "'Fira Sans Condensed', sans-serif",
-    title: "Oswald",
+    title: "Poppins",
   },
 };
 

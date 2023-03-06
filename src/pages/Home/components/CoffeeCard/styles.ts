@@ -2,9 +2,10 @@ import styled from "styled-components";
 import { App } from '../../../../App';
 import { InfoWithIcon } from '../../../../components/InfoWithIcon/index';
 import { RegularText, TitleText } from '../typography';
+import { CompleteOrderPage } from '../../../CompleteOrder/index';
 
 export const CoffeeCardContainer = styled.div`
-  width: 100%;
+  width: 80%;
   background: ${({ theme }) => theme.colors["base-card"]};
   border-radius: 2rem;
   padding: 1.25rem;
@@ -12,6 +13,8 @@ export const CoffeeCardContainer = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
+
+  text-align: center;
   
   padding-top: 0;
 
@@ -59,4 +62,52 @@ export const Name = styled(TitleText).attrs({
   text-align: center;
 `
 
-export const Description = styled(RegularText)
+export const Description = styled(RegularText).attrs({
+  size: "s",
+  text: "subtitle",
+  color: "label"
+})`
+  margin-bottom: 2rem;
+`
+
+export const CardFooter = styled.div`
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 0 1.5rem;
+
+  > div {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    p {
+      line-height: .75rem;
+    }
+
+  }
+`
+
+export const AddCartWrapper = styled.div`
+  width: 7.5rem;
+  
+  > button {
+    width: 2.375rem;
+    height: 2.375rem;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: ${({ theme}) => theme.colors["brand-purple-dark"]};
+    color: ${({ theme }) => theme.colors["base-card"]};
+    border-radius: 6px;
+    margin-left: 0.3rem;
+    transition: 0.4s;
+
+    &:hover {
+      background: ${({ theme}) => theme.colors["brand-purple"]};
+    }
+  }
+`

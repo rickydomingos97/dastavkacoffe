@@ -1,6 +1,6 @@
 import { BenefitsContainer, IntroContainer, IntroContent, IntroTitle } from "./styles";
 
-import introImg from '../../../../assets/cafeImg.svg'
+import introImg from '../../../../assets/cafeHero.svg'
 import { RegularText } from "../typography";
 import { InfoWithIcon } from "../../../../components/InfoWithIcon";
 import { ShoppingCart, Package, Timer, Coffee } from "phosphor-react";
@@ -15,38 +15,33 @@ export function Intro() {
         <div>
           <section>
             <IntroTitle size="xl">
-              Найдите идеальный кофе в любое время дня
+              Find the perfect coffee for any time of day
             </IntroTitle>
             <RegularText size="l" color="subtitle" as="h3">
-              С Доставка
-              кофе вы получаете свой кофе, где бы вы ни находились, в любое время
+              With Coffee Delivery you get your coffee wherever you are, anytime
             </RegularText>
           </section>
 
           <BenefitsContainer>
             <InfoWithIcon
               iconBg={colors["brand-yellow-dark"]}
-              icon={<ShoppingCart weight="fill" />}
-              text="Простая и легкая покупка"
-              size={48}
+              icon={<ShoppingCart weight="fill" size="32"/>}
+              text="Simple and safe purchase"
             />
             <InfoWithIcon
               iconBg={colors["base-text"]}
-              icon={<Package weight="fill" />}
-              text="безопасная упаковка"
-              size={48}
+              icon={<Package weight="fill" size="32" />}
+              text="Packaging keeps coffee intact"
             />
             <InfoWithIcon
               iconBg={colors["brand-yellow"]}
-              icon={<Timer weight="fill" />}
-              text="быстрая доставка"
-              size={48}
+              icon={<Timer weight="fill" size="32" />}
+              text="Fast and tracked delivery"
             />
-            <InfoWithIcon 
+            <InfoWithIcon
               iconBg={colors["brand-purple"]}
-              icon={<Coffee weight="fill"/>}
-              text="Кофе приходит к вам свежим"
-              size={48}
+              icon={<Coffee weight="fill" size="32" />}
+              text="Coffee comes to you fresh"
             />
           </BenefitsContainer>
         </div>

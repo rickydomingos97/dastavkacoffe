@@ -5,9 +5,8 @@ interface InfoWithIconProps {
   icon: ReactNode;
   text: string | ReactNode;
   iconBg: string;
-  size: number;
 }
-export function InfoWithIcon({ icon, text, iconBg , size}: InfoWithIconProps) {
+export function InfoWithIcon({ icon, text, iconBg }: InfoWithIconProps) {
   return (
     <InfoWithIconContainer>
       <IconContainer iconBg={iconBg}>{icon}</IconContainer>

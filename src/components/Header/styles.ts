@@ -1,12 +1,24 @@
 import styled, { css } from "styled-components";
 
 export const HeaderContainer = styled.header`
-  width: 100%;
+  width: 90rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+
   height: 6.5rem;
   background: ${({ theme }) => theme.colors["base-background"]};
   display: flex;
   align-items: center;
   justify-content: center;
+
+
+  //fixar o header
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 5;
 
   > div {
     display: flex;

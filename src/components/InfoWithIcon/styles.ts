@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const InfoWithIconContainer = styled.div`
   display: flex;
   align-items: center;
-  gap: .75rem;
+  gap: 1.5rem;
 
 `
 
@@ -12,9 +12,8 @@ interface IconContainerProps {
 }
 
 export const IconContainer = styled.div<IconContainerProps>`
-  width: 3rem;
-  height: 3rem;
-  
+  width: 4rem;
+  height: 4rem;
   border-radius: 20%;
   
   
