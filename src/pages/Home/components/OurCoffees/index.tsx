@@ -11,7 +11,7 @@ export function OurCoffees() {
       </TitleText>
       <CoffeeList>
         {coffees.map((coffee) => (
-          <CoffeeCard key={coffee.id} coffee={coffee}/>
+          <CoffeeCard key={coffee.id} coffee={coffee} />
         ))}
           
       </CoffeeList>
