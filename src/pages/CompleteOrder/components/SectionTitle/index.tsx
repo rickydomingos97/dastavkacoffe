@@ -16,7 +16,7 @@ export function SectionTitle({ title, subtitle, icon }: SectionTitleProps) {
 <RegularText color="subtitle">
   {title}
 </RegularText>
-<RegularText size="s">
+<RegularText size="s" color="label">
   {subtitle}
 </RegularText>
         

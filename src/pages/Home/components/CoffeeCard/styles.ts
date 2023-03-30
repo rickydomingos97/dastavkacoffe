@@ -5,7 +5,7 @@ import { RegularText, TitleText } from '../typography';
 import { CompleteOrderPage } from '../../../CompleteOrder/index';
 
 export const CoffeeCardContainer = styled.div`
-  width: 80%;
+  width: 90%;
   background: ${({ theme }) => theme.colors["base-card"]};
   border-radius: 2rem;
   padding: 1.25rem;
@@ -13,6 +13,8 @@ export const CoffeeCardContainer = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  
+  margin-bottom: 2rem;
 
   text-align: center;
   
@@ -67,7 +69,7 @@ export const Description = styled(RegularText).attrs({
   text: "subtitle",
   color: "label"
 })`
-  margin-bottom: 2rem;
+  margin-bottom: 4rem;
 `
 
 export const CardFooter = styled.div`
@@ -81,7 +83,8 @@ export const CardFooter = styled.div`
   > div {
     display: flex;
     align-items: center;
-    gap: 8px;
+    justify-content: center;
+    gap: .5rem;
 
     p {
       line-height: .75rem;

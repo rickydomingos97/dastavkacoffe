@@ -47,7 +47,7 @@ export const GlobalStyle = createGlobalStyle`
     -moz-appearance: textfield;
   }
   ::-webkit-scrollbar {
-    width: 0.4rem;
+    width: .725rem;
   }
   ::-webkit-scrollbar-track {
     background: ${({ theme }) => theme.colors["base-button"]}
