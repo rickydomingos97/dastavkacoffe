@@ -5,7 +5,7 @@ import { RegularText, TitleText } from '../typography';
 import { CompleteOrderPage } from '../../../CompleteOrder/index';
 
 export const CoffeeCardContainer = styled.div`
-  width: 90%;
+  
   background: ${({ theme }) => theme.colors["base-card"]};
   border-radius: 2rem;
   padding: 1.25rem;
